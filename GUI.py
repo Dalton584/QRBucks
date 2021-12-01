@@ -13,30 +13,102 @@ class GUI():
     def drinkType(self):
         msg = "Choose a drink type"
         title = "QRbucks Designer"
-        choices = ["Hot Coffee", "Hot Drink", "Cold Coffee", "Cold Drink", \
+        choices = ["Coffee", "Hot Drink", "Cold Drink", \
                    "Hot Tea", "Frappuccino", "Iced Tea"]
         choice = choicebox(msg, title, choices)
+        
         
         # if the choice exists, return choice
         if choice:
             return choice
+           
         # if the choice does not exist, stop the program
         else:
             sys.exit(0)
     
     
     def drinkCoffeeTypes(self):
-        msg = "choose a drink a type"
+        msg = "Choose a drink type"
         title = "QRbucks designer"
-        choices = ["Americanos", "Brewed Coffes", "Cappuccinos",
-                   "Espreso Shots", "Flat Whites", "Lattes", "Macchiatos", \
-                   "Mochas"]
+        choices = ["Americano", "Brewed Coffees", "Espresso", "Iced Coffee"]
         choice = choicebox(msg, title, choices)
         
         if choice:
             return choice
         else:
             sys.exit(0)
+            
+            
+    def hotDrinkTypes(self):
+        msg = "Choose a hot drink type"
+        title = "QRbucks designer"
+        choices = ["Hot Chocolate", "Steamer", "Juice"]
+        choice = choicebox(msg, title, choices)
+        
+        if choice:
+            return choice
+        else:
+            sys.exit(0)
+            
+            
+    def drinkBrewed(self):
+         msg = "Choose a brewed coffee"
+         title = "QRbucks designer"
+         choices = ['blonde roast', 'pike place roast', 'dark roast', 'decaf pike place roast',]
+         choice = choicebox(msg, title, choices)
+         
+         if choice:
+             return choice
+         else:
+             sys.exit(0)
+             
+             
+    def drinkEspresso(self):
+          msg = "Choose a brewed coffee"
+          title = "QRbucks designer"
+          choices = ['cappuccino', 'espresso', 'espresso con panna', 'flat white', 'honey almondmilk flat white', \
+                     'pumpkin spice latte', 'honey oatmilk latte','latte', 'cinnamon dolce latte', \
+                         'blonde vanilla latte', 'apple crisp macchiato', \
+                     'caramel macchiato', 'espresso macchiato', 'mocha', 'white chocolate mocha']
+          choice = choicebox(msg, title, choices)
+          
+          if choice:
+              return choice
+          else:
+              sys.exit(0)
+              
+              
+    def drinkIcedCoffee(self):
+            msg = "Choose a brewed coffee"
+            title = "QRbucks designer"
+            choices = ['pumpkin cream cold brew', 'salted caramel cream cold brew', 'honey almondmilk cold brew', \
+                       'cold brew', 'vanilla sweet cream cold brew', 'cold brew with milk', \
+                       'honey almondmilk nitro cold brew', 'nitro cold brew', 'vanilla sweet cream nitro cold brew', \
+                           'iced coffee', 'iced coffee with milk', 'iced brown sugar oatmilk shaken espresso', \
+                               'iced chocolate almondmilk shaken espresso', 'iced shaken espresso']
+
+            choice = choicebox(msg, title, choices)
+            
+            if choice:
+                return choice
+            else:
+                sys.exit(0)
+                
+            
+    def drinkHotTea(self):
+            msg = "Choose a hot tea"
+            title = "QRbucks designer"
+            choices = ['chai tea', 'chai tea latte', 'earl grey tea', 'london fog tea latte', \
+                       'royal english breakfast tea', 'royal english breakfast tea latte', \
+                           'emperors clouds & mist', 'matcha tea latte', 'honey citrus mint tea', \
+                               'jade citrus mint tea', 'mint majesty', 'peach tranquility']
+
+            choice = choicebox(msg, title, choices)
+            
+            if choice:
+                return choice
+            else:
+                sys.exit(0)
     
     
     def drinkSize(self):
@@ -52,7 +124,7 @@ class GUI():
     
     
     def drinkCream(self):
-        msg = "choose a Cream"
+        msg = "Choose a Cream"
         title = "QRbucks designer"
         choices = ["Default", "Oatmilk", "Nonfat Milk",
                    "Whole Milk", "Heavy Cream", "Coconut", "Sweet Cream", \
@@ -66,7 +138,7 @@ class GUI():
     
     
     def drinkFlavors(self):
-        msg = "choose a Flavor"
+        msg = "Choose a Flavor"
         title = "QRbucks designer"
         choices = ["Default", "Syrup", "Apple Brown Sugar",
                    "Brown Sugar", "Caramel", "Cinnamon", "Cinnamon Dolce", \
@@ -80,26 +152,43 @@ class GUI():
         else:
             sys.exit(0)
     
-    def drinkFrappuccino():
-        msg = "choose a Frappuccino"
+    def drinkFrappuccino(self):
+        msg = "Choose a Frappuccino"
         title = "QRbucks designer"
-        choices = ["Sugar Cookie Almondmilk Frappuccino Blended Beverage", "Toasted White Chocolate Mocha Frappuccino Blended Beverage",
-                   "Peppermint White Chocolate Mocha Frappuccino Blended Beverage", "Caramel Brulee Frappucino Blended Beverage",
-                   "Peppermint Mocha Frappuccino Blended Beverage", "Apple Crisp Frappuccino Blended Beverage",
-                   "Mocha Cookie Crumble Frappuccino Blended Beverage", "Chestnut Praline Frappuccino Blended Beverage",
-                   "Caramel Ribbon Crunch Frappuccino Blended Beverage", "Espresso Frappuccino Blended Beverage",
-                   "Caffe Vanilla Frappuccino Blended Beverage", "Caramel Frappuccino Blended Beverage", "Coffe Frappuccino Blended Beverage",
-                   "Mocha Frappuccino Blended Beverage", "Java Chip Frappuccino Blended Beverage",
-                   "White Chocolate Mocha Frappuccino Blended Beverage"]
+        choices = ['pumpkin spice frappuccino', 'apple crisp frappuccino', 'strawberry funnel cake frappuccino', \
+                   'mocha cookie crumble frappuccino', 'caramel ribbon crunch frappuccino', 'espresso frappuccino', \
+            'caffe vanilla frappuccino', 'caramel frappuccino', 'coffee frappuccino', 'mocha frappuccino', \
+            'java chip frappuccino', 'white chocolate mocha frappuccino', 'pumpkin spice creme frappuccino',\
+            'apple crisp creme frappuccino', 'strawberry funnel cake creme frappuccino', \
+            'chocolate cookie crumble creme frappuccino', 'caramel ribbon crunch creme frappuccino', \
+            'strawberry creme frappuccino', 'chai creme frappuccino', 'double chocolatey chip creme frappuccino', \
+            'match creme frappuccino', 'vanilla bean creme frappuccino', 'white chocolate creme frappuccino']
         choice = choicebox(msg, title, choices)
         
         if choice:
             return choice
         else:
             sys.exit(0)
+            
+            
+    def drinkCold(self):
+        msg = "Choose a Refresher, Water, or Milk"
+        title = "QRbucks designer"
+        choices = ['star drink', 'kiwi starfruit refresher', 'kiwi starfruit refresher lemonade', 'dragon drink',\
+                   'mango dragonfruit refresher', 'mango dragonfruit refresher lemonade', 'pink drink', \
+                     'strawberry acai refresher', 'strawberry acai refresher lemonade', 'violet drink', \
+                         'very berry refresher', 'very berry refresher lemonade', 'blended strawberry lemonade', \
+                             'lemonade', 'water', 'milk' ]
+        choice = choicebox(msg, title, choices)
+        
+        if choice:
+            return choice
+        else:
+            sys.exit(0)
+            
     
-    def drinkHotChocolate():
-        msg = "choose a Hot Chocolate"
+    def drinkHotChocolate(self):
+        msg = "Choose a Hot Chocolate"
         title = "QRbucks designer"
         choices = ["Toasted White Hot Chocolate", "Peppermint White Hot Chocolate", "Peppermint Hot Chocolate",
                    "Hot Chocolate", "White Hot Chocolate"]
@@ -110,8 +199,8 @@ class GUI():
         else:
             sys.exit(0)
     
-    def drinkJuice():
-        msg = "choose a Juice"
+    def drinkJuice(self):
+        msg = "Choose a Juice"
         title = "QRbucks designer"
         choices = ["Caramel Apple Spice", "Steamed Apple Juice"]
         choice = choicebox(msg, title, choices)
@@ -121,11 +210,10 @@ class GUI():
         else:
             sys.exit(0)
     
-    def drinkSteamers():
-        msg = "choose a Steamers"
+    def drinkSteamers(self):
+        msg = "Choose a Steamers"
         title = "QRbucks designer"
-        choices = ["Chestnut Preline Creme", "Caramel Brulee", "Pumpkin Spice Creme",
-                   "Cinnamon Dolce Creme", "Steamed Milk", "Vanilla Creme"]
+        choices = ['pumpkin spice creme', 'cinnamon dolce creme', 'steamed milk', 'vanilla creme']
         choice = choicebox(msg, title, choices)
         
         if choice:
@@ -133,14 +221,14 @@ class GUI():
         else:
             sys.exit(0)
     
-    def drinkIcedTeas():
-        msg = "choose an Iced Tea"
+    def drinkIcedTeas(self):
+        msg = "Choose an Iced Tea"
         title = "QRbucks designer"
-        choices = ["Teavana Sparkling Unsweetened Peach Nectarine Green Tea", "Teavana Mango Balck Tea", "Iced Black Tea",
-                   "Iced Black Tea", "Iced Royal English Breakfast Tea Latte", "Iced London Fog Tea Latte",
-                   "Iced Chai Tea Latte", "Iced Peach Green Tea", "Iced Peach Green Tea Lemonade",
-                   "Iced Matcha Tea Latte", "Iced Green Tea", "Iced Green Tea Lemonade", "Iced Matcha Lemonade",
-                   "Iced Passion Tango Tea", "Iced Passion Tango Tea Lemonade"]
+        choices = ['iced guava black tea', 'iced guava black tea lemonade', 'iced black tea', \
+                   'iced black tea lemonade', 'iced royal english breakfast tea latte', 'iced london fog tea latte', \
+                       'iced chai tea latte', 'iced peach green tea', 'iced peach green tea lemonade', \
+                           'iced matcha tea latte', 'iced green tea', 'iced green tea lemonade', 'iced matcha lemonade', \
+                               'iced passion tango tea', 'iced passion tango tea lemonade']
         choice = choicebox(msg, title, choices)
         
         if choice:
@@ -162,7 +250,7 @@ class GUI():
         
          if choice:
             return choice
-        else:
+         else:
             sys.exit(0)
     
     
@@ -184,7 +272,7 @@ class GUI():
         title = "QRbucks Designer"
         choices = ["None", "One", "Two", "Three", "Four"]
         choice = choicebox(msg, title, choices)
-        
+        5
         if choice:
             return choice
         else:
@@ -199,3 +287,30 @@ class GUI():
             pass
         else:
             self.drinkCoffeeTypes()
+            
+    def drinkBuilder(self):
+        currentChoice = GUI().drinkType()
+        if currentChoice == "Coffee":
+            currentChoice = GUI().drinkCoffeeTypes()
+        elif currentChoice == "Hot Drink":
+            currentChoice = GUI().hotDrinkTypes()
+        elif currentChoice == "Cold Drink":
+            currentChoice = GUI().drinkCold()
+        elif currentChoice == "Hot Tea":
+            currentChoice = GUI().drinkHotTea()
+        elif currentChoice == "Frappuccino":
+            currentChoice = GUI().drinkFrappuccino()
+        elif currentChoice == "Iced Tea":
+            currentChoice = GUI().drinkIcedTeas()
+            
+GUI().drinkBuilder()
+            
+            
+            
+            
+            
+
+
+
+
+
